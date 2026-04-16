@@ -1,0 +1,2 @@
+
+.gitignore file - Git will ignore files/folders described in this file
