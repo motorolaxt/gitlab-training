@@ -5,3 +5,9 @@ git log
 --patch
 --stat
 --oneline
+
+git diff - show changes made on the file
+--staged
+
+git checkout -- file_name -> remove changes and return back to last commited state of the file
+git reset --hadr <commit_hash> -> remove everything after specified <commit_hash> 
