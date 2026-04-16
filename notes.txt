@@ -12,3 +12,10 @@ git diff - show changes made on the file
 git checkout -- file_name -> remove changes and return back to last commited state of the file
 git reset --hadr <commit_hash> -> remove everything after specified <commit_hash> 
 git revert <commit_hash> -> create new commit which removes changes done by <commit_hash>. History stays intact (better then git reset --hard)
+
+git branch name-of-new-branch
+git checkout name-of-new-branch -> old way how to switch to new branch, use git switch
+git merge name-of-new-branch -> run this command from (main) branch, if you want take changes from (name-of-new-branch) to (main)  
+
+git tag - create milestones/important points in project
+git tag -a v0.1 -m "First stable release"
