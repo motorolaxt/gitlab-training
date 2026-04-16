@@ -28,3 +28,5 @@ git stash pop - pop and remove form stasck
 git stash apply - pop form stack but do not remove from stack
 
 git cherry-pick - select only some commits from merge request
+
+git reflog - show history of git activity eg. switching branch, HEAD reset
