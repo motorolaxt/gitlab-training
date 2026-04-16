@@ -20,3 +20,11 @@ git merge name-of-new-branch -> run this command from (main) branch, if you want
 git tag - create milestones/important points in project
 git tag -a v0.1 -m "First stable release"
 git push origin -> not full command for pushing the tag to remote server
+
+git stash - like tmp, save files in one branch and can switch to another branch
+git stash save "tmp-save-feature"
+git stash list
+git stash pop - pop and remove form stasck
+git stash apply - pop form stack but do not remove from stack
+
+git cherry-pick - select only some commits from merge request
