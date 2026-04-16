@@ -12,5 +12,3 @@ git diff - show changes made on the file
 git checkout -- file_name -> remove changes and return back to last commited state of the file
 git reset --hadr <commit_hash> -> remove everything after specified <commit_hash> 
 git revert <commit_hash> -> create new commit which removes changes done by <commit_hash>. History stays intact (better then git reset --hard)
-
-Blbost1
