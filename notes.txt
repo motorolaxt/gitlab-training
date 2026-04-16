@@ -4,4 +4,4 @@
 git log
 --patch
 --stat
---oneline 
+--oneline
