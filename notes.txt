@@ -19,3 +19,4 @@ git merge name-of-new-branch -> run this command from (main) branch, if you want
 
 git tag - create milestones/important points in project
 git tag -a v0.1 -m "First stable release"
+git push origin -> push tag to remote server, blah ...
