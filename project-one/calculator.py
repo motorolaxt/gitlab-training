@@ -1,5 +1,7 @@
 # calculator.py
 
+from datetime import datetime, time
+
 def add(a, b):
     return a + b
 
@@ -18,6 +20,13 @@ def divide(a, b):
         return "Error: division by zero - new note to error message"
     return a / b
 
+def goHomeSooner():
+    now = datetime.now()
+    if now.weekday() == 4 and now.time() >= time(14, 0):
+        print("Go home!")
+        exit(0)
+    else:
+        print("Work more!")
 
 def main():
     print("Select operation: + / - / * / /")
@@ -34,7 +43,7 @@ def main():
     elif op == "/":
         print(divide(a, b))
     else:
-        print("Unknown operation")
+        goHomeSooner()
 
 
 main()
