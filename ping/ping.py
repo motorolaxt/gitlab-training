@@ -12,13 +12,13 @@ def ping_host(host):
     result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     
     if result.returncode == 0:
-        print(f"Odpověď od {host}: OK")
+        print(f"Odpověď od {host}: Wazup")
     else:
-        print(f"Odpověď od {host}: CHYBA (Hostitel je nedostupný)")
+        print(f"Odpověď od {host}: Na této IP se žádný počítač ne-e")
 
 # Seznam IP adres k testování
-ips = ["8.8.8.8", "1.1.1.1"]
+ips = ["8.8.8.8", "1.1.1.1", "0.0.0.0", "666.666.666.666"]
 
-print("Spouštím test připojení...")
+print("get ready for FUBAR in 3.. 2.. 1..")
 for ip in ips:
     ping_host(ip)
