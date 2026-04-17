@@ -31,8 +31,8 @@ def goHomeSooner():
 def main():
     print("Select operation: + / - / * / /")
     op = input("Operation: ")
-    a = float(input("First number: "))
-    b = float(input("Second number: "))
+    #a = float(input("First number: "))
+    #b = float(input("Second number: "))
 
     if op == "+":
         print(add(a, b))
