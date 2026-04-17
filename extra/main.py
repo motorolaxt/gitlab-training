@@ -5,10 +5,12 @@ def madness():
     root = tk.Tk()
     root.withdraw()
 
-    messagebox.showinfo("Okno 1", "THIS")
-    messagebox.showinfo("Okno 2", "IS")
-    messagebox.showinfo("Okno 3", "SPAARTAA!!!")
-
+    messagebox.showinfo("wina", "THIS")
+    messagebox.showinfo("winb", "IS")
+    messagebox.showinfo("winc", "SPAARTAA!!!")
+    messagebox.showinfo("winc", ".... not yet")
+    messagebox.showinfo("winc", "no, sorry")
+    messagebox.showinfo("winc", "I said SPARTA!!!")
     root.destroy()
 
 madness()
