@@ -32,7 +32,7 @@ jobs:
       
       - name: Run the script
         run: |
-           python calcurator.py
+           python project-one/calcurator.py
            
       - name: Run tests
         run: |
