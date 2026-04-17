@@ -12,7 +12,7 @@ def multiply(a, b):
 
 def divide(a, b):
     if b == 0:
-        return "Error: division by zero"
+        return "Error: division by zero - new note to error message"
     return a / b
 
 def main():
