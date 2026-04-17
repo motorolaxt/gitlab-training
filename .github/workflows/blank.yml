@@ -32,5 +32,36 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+           python -V
+      - name: List files
+        run: ls -R .
+
+      - name: Show current folder
+        run: pwd
+        
+      - name: Run the script
+        run: |
+           echo "test" | python project-one/calculator.py
+           
+      - name: Run tests
+        run: |
+          if [ -d tests ]; then python -m pytest tests/ -v; else echo "No tests found, skipping."; fi
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install flake8
+        run: pip install flake8
+
+      - name: Run flake8
+        run: flake8 . --max-line-length=100 --exclude=.git,__pycache__
