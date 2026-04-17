@@ -3,16 +3,21 @@
 def add(a, b):
     return a + b
 
+
 def subtract(a, b):
     return a - b
+
+
 # conflict testing
 def multiply(a, b):
     return a * b
+
 
 def divide(a, b):
     if b == 0:
         return "Error: division by zero - new note to error message"
     return a / b
+
 
 def main():
     print("Select operation: + / - / * / /")
@@ -31,6 +36,5 @@ def main():
     else:
         print("Unknown operation")
 
+
 main()
-
-
