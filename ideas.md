@@ -1,2 +1,2 @@
 # my ideas
-- testing note
+- I will not merge my own code
