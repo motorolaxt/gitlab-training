@@ -35,10 +35,13 @@ jobs:
            python -V
       - name: List files
         run: ls -R .
+
+      - name: Show current folder
+        run: pwd
         
       - name: Run the script
         run: |
-           python project-one/calcurator.py
+           python ./project-one/calcurator.py
            
       - name: Run tests
         run: |
