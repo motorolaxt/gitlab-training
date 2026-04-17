@@ -33,7 +33,9 @@ jobs:
       - name: Run a multi-line script
         run: |
            python -V
-      
+      - name: List files
+        run: ls -R .
+        
       - name: Run the script
         run: |
            python project-one/calcurator.py
