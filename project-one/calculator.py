@@ -29,7 +29,7 @@ def goHomeSooner():
         print("Work more...!")
 
 def main():
-    print("Select operation: + / - / * / /")
+    print("Select operation: + / - / * / / surprise")
     op = input("Operation: ")
     a = float(input("First number: "))
     b = float(input("Second number: "))
