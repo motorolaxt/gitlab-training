@@ -26,7 +26,7 @@ def goHomeSooner():
         print("Go home!")
         exit(0)
     else:
-        print("Work more!")
+        print("Work more...!")
 
 def main():
     print("Select operation: + / - / * / /")
