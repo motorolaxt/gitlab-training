@@ -26,6 +26,14 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+      - name: Python version
+        run: |
+           python -V
+      
+      - name: Run the script
+        run: |
+           python calcurator.py
+           
       - name: Run tests
         run: |
           if [ -d tests ]; then python -m pytest tests/ -v; else echo "No tests found, skipping."; fi
