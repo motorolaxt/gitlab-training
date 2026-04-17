@@ -41,7 +41,7 @@ jobs:
         
       - name: Run the script
         run: |
-           python ./project-one/calcurator.py
+           python project-one/calculator.py
            
       - name: Run tests
         run: |
