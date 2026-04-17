@@ -1,5 +1,7 @@
 # PULL
 
-## This is blasphemy! This is madness!
-
-Madness? THIS IS PULL!
+git lfs - aneb pracujeme s velkymi soubory  
+git push - slouží k nahrání (odeslání) lokálních změn a větví do vzdáleného repozitáře  
+git log - log historie  
+git blame - kdo spáchal tyhle změny?  
+man git - read it  
