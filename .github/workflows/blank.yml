@@ -41,7 +41,7 @@ jobs:
         
       - name: Run the script
         run: |
-           python project-one/calculator.py suprise
+           echo "test" | python project-one/calculator.py
            
       - name: Run tests
         run: |
